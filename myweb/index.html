@@ -1,0 +1,640 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Painters Dublin | Painters and Decorators | Painting Dublin</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 Trial Version - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/owl.carousel.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/delft2.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="skrollr.min.js"></script>
+<script src="owl.carousel.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="wb.photocollage.min.js"></script>
+<link rel="stylesheet" href="magnificpopup/magnific-popup.css">
+<script src="magnificpopup/jquery.magnific-popup.min.js"></script>
+<script src="wwb18.min.js"></script>
+<script>   
+   document.addEventListener('DOMContentLoaded', function(event)
+   {
+      var elementCarousel1 = document.querySelector('#Carousel1');
+      elementCarousel1.addEventListener('slid.bs.carousel', function(e)
+      {
+         switch(e.to)
+         {
+            case 0:
+               AnimateCss('wb_welcomeText1', 'slide-left-in', 300, 1000);
+               AnimateCss('wb_welcomeText2', 'slide-right-in', 1000, 1000);
+               AnimateCss('welcomeButton1', 'swash-in', 2000, 1000);
+               break;
+            case 1:
+               AnimateCss('wb_welcomeText3', 'scale-in-horizontal-center', 300, 1000);
+               AnimateCss('wb_welcomeText4', 'scale-in-vertical-center', 1000, 1000);
+               AnimateCss('welcomeButton2', 'twister-down-in', 2000, 1000);
+               break;
+         }
+      });
+      var Carousel1 = new bootstrap.Carousel('#Carousel1', {interval: 6000, pause: false});
+      var elementattractionsCarousel = document.querySelector('#attractionsCarousel');
+      elementattractionsCarousel.addEventListener('slid.bs.carousel', function(e)
+      {
+         switch(e.to)
+         {
+            case 0:
+               $('#Carousel2').bootstrapcarousel(0);
+               break;
+            case 1:
+               $('#Carousel2').bootstrapcarousel(1);
+               break;
+            case 2:
+               $('#Carousel2').bootstrapcarousel(2);
+               break;
+            case 3:
+               $('#Carousel2').bootstrapcarousel(3);
+               break;
+         }
+      });
+      var attractionsCarousel = new bootstrap.Carousel('#attractionsCarousel', {interval: 0, pause: false});
+   });
+</script>
+<script>   
+   $(document).ready(function()
+   {
+      $('#reviewsImage1').addClass('visibility-hidden');
+      $('#portfolio-image2').addClass('visibility-hidden');
+      function skrollrInit()
+      {
+         skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+      }
+      skrollrInit();
+      $("a[href*='#galleryLayoutGrid']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_galleryLayoutGrid').offset().top-88 }, 600, 'easeOutCirc');
+      });
+      function onScrollgalleryLayoutGrid()
+      {
+         var $obj = $("#wb_galleryLayoutGrid");
+         if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+         {
+            $obj.addClass("in-viewport");
+            AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+            AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+         }
+      }
+      onScrollgalleryLayoutGrid();
+      $(window).scroll(function(event)
+      {
+         onScrollgalleryLayoutGrid();
+      });
+      $("a[href*='#todoCards']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_todoCards').offset().top-88 }, 600, 'easeOutCirc');
+      });
+      $("a[href*='#planTripLayoutGrid']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#planTripLayoutGrid').offset().top }, 600, 'easeInSine');
+      });
+      $("#reviewsContainer").owlCarousel({autoplayTimeout:5000, margin: 16, autoplay: true, nav: false, loop: true, dots: true, items: 2, slideBy: 1});
+      $("a[href*='#contactForm']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_contactForm').offset().top }, 600, 'easeInSine');
+      });
+      $("a[data-rel='galleryCollage']").attr('rel', 'galleryCollage');
+      $("#galleryCollage").magnificPopup({delegate:'a', type:'image', gallery: {enabled: true, navigateByImgClick: true}});
+      $("#galleryCollage").photocollage({ effect: 'css', duration: 600, padding: 20, lazyload: true, matrix: '1,1,1,2,0,1,2,0,0,0,1,0,0,1,1,2,0,1,2,0,0,0,1,0,0' });
+   });
+</script>
+</head>
+<body>
+   <div id="wb_LayoutGrid2" data-top="padding-top:40PX;padding-bottom:40PX;transform:;transform:;" data--200-top="padding-bottom:5PX;" data--500-top="padding-top:4PX;">
+      <div id="LayoutGrid2">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_Image1" style="display:inline-block;width:281px;height:38px;z-index:0;">
+                  <a href="./index.html"><img src="images/LOGOFINAL.png" id="Image1" alt="" width="281" height="40"></a>
+               </div>
+            </div>
+            <div class="col-2">
+               <nav id="wb_CssMenu1" style="display:inline-block;width:100%;z-index:1;">
+                  <ul id="CssMenu1" role="menubar" class="nav">
+                     <li role="menuitem" class="nav-item firstmain"><a class="nav-link CssMenu1-effect" href="./index.html#home" target="_self">HOME</a>
+                     </li>
+                     <li role="menuitem" class="nav-item"><a class="nav-link CssMenu1-effect" href="./index.html" target="_self">SERVICES&nbsp;</a>
+                     </li>
+                     <li role="menuitem" class="nav-item"><a class="nav-link CssMenu1-effect" href="./wb15_delft_with_breakpoint.html" target="_self">&nbsp;ABOUT</a>
+                     </li>
+                     <li role="menuitem" class="nav-item"><a class="nav-link CssMenu1-effect" href="#" target="_self">QUOTES</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="StickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:78;" data-250-start="opacity:1;" data-start="opacity:0;">
+      <div id="wb_up-arrow" style="position:absolute;left:9px;top:9px;width:24px;height:24px;text-align:center;z-index:2;">
+         <a href="#welcome"><div id="up-arrow"><i class="fa fa-angle-up"></i></div></a></div>
+   </div>
+   <div id="wb_welcome">
+      <div id="welcome-overlay"></div>
+      <div id="welcome">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_Carousel1">
+                  <div id="Carousel1" class="carousel slide" data-bs-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-bs-target="#Carousel1" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#Carousel1" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#Carousel1" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#Carousel1" data-bs-slide-to="3"></li>
+                        <li data-bs-target="#Carousel1" data-bs-slide-to="4"></li>
+                        <li data-bs-target="#Carousel1" data-bs-slide-to="5"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="carousel-item-inner">
+                              <div id="wb_welcomeText1">
+                                 <p style="font-size:29px;line-height:40.5px;"><span style="font-size:32px;line-height:44px;">INTERIOR PAINTING</span></p>
+                              </div>
+                              <div id="wb_welcomeText2">
+                                 <p>PROFESSIONAL INTERIOR PAINTING SERVICES FOR HOMES AND COMMERCIAL SPACES IN DUBLIN</p>
+                              </div>
+                              <input type="submit" id="welcomeButton1" name="" value="LET'S PAINT" style="display:inline-block;width:141px;height:37px;z-index:5;">
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="carousel-item-inner">
+                              <div id="wb_welcomeText3">
+                                 <p style="font-family:Arial;line-height:33px;"><span style="font-family:Montserrat;">TEXTURED WALL APPLICATION</span></p>
+                              </div>
+                              <div id="wb_welcomeText4">
+                                 <p>ELEVATE YOUR WALLS WITH ARTISTIC INTERIOR TEXTURE. OFFERING CREATIVE INTERIOR DESIGN OPTIONS IN DUBLIN AND THE KILDARE REGION</p>
+                              </div>
+                              <input type="submit" id="welcomeButton2" name="" value="LET'S PAINT" style="display:inline-block;width:141px;height:37px;z-index:8;">
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="carousel-item-inner">
+                              <div id="wb_Text8">
+                                 <p>EXPERT WALLPAPER SERVICE</p>
+                              </div>
+                              <div id="wb_Text9">
+                                 <p>ELEVATE YOUR HOME WITH EXPERT WALLPAPER APPLICATION AND REPAIR SERVICES. TRANSFORM SPACES WITH A BLEND OF CRAFTSMANSHIP AND QUALITY</p>
+                              </div>
+                              <input type="submit" id="Button4" name="" value="WALLPAPER MY HOME" style="display:inline-block;width:221px;height:37px;z-index:11;">
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="carousel-item-inner">
+                              <div id="wb_Text1">
+                                 <p style="font-family:Arial;line-height:33px;"><span style="font-family:Montserrat;">BATHROOM RENOVATION </span></p>
+                              </div>
+                              <div id="wb_Text2">
+                                 <p>BATHROOM RENOVATION AND REPAIR SPECIALISTS: ELEVATE YOUR SPACES WITH EXPERT CRAFTSMANSHIP. DUBLIN'S TRUSTED CHOICE FOR QUALITY BATHROOM TRANSFORMATIONS</p>
+                              </div>
+                              <input type="submit" id="Button1" name="" value="APPLY NOW!" style="display:inline-block;width:141px;height:37px;z-index:14;">
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="carousel-item-inner">
+                              <div id="wb_Text6">
+                                 <p>We Build Wooden Fences</p>
+                              </div>
+                              <div id="wb_Text7">
+                                 <p>CRAFTING OUTDOOR SANCTUARY: EXPLORE THE CHARMS OF WOODEN FENCING, TAILORED TO ELEVATE PRIVACY AND AESTHETICS</p>
+                              </div>
+                              <input type="submit" id="Button3" name="" value="WALLPAPER MY HOME" style="display:inline-block;width:239px;height:37px;z-index:17;">
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="carousel-item-inner">
+                              <div id="wb_Text10">
+                                 <p>WOODEN GAZEBOS</p>
+                              </div>
+                              <div id="wb_Text11">
+                                 <p>WOULD YOU LIKE A CORNER OF RELAXATION IN YOUR BACKYARD? WE TURN THIS DESIRE INTO REALITY</p>
+                              </div>
+                              <input type="submit" id="Button5" name="" value="CRAFTING TRANQUILITY" style="display:inline-block;width:251px;height:37px;z-index:20;">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_banner">
+      <div id="banner-overlay"></div>
+      <div id="banner">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_Text12">
+                  <span style="color:#FFFFFF;font-family:'Montserrat Medium';font-size:29px;line-height:52px;">WE ARE THE LEADERS<br>IN OUR CRAFT<br></span><span style="color:#FFFFFF;font-family:'Montserrat Light';font-size:19px;line-height:37px;">At Upgrade Home, we are dedicated to exceeding expectations in every service we provide. By consistently delivering value to our customers, we have earned the position of leaders in the Dublin market, offering you the exceptional opportunity to experience top-quality at the lowest price.</span><span style="color:#FFFFFF;font-family:'Montserrat Light';font-size:20px;line-height:38px;"><br><br></span>
+               </div>
+               <button type="submit" id="ThemeableButton3" name="" value="ABOUT US" class="ui-button ui-corner-all" style="display:inline-block;width:204px;height:56px;z-index:23;">ABOUT US</button>
+            </div>
+            <div class="col-2">
+               <div class="col-2-padding">
+                  <div id="wb_Text13">
+                     <p>7</p>
+                  </div>
+                  <div id="wb_Text15">
+                     <br>
+                     <p>YEARS</p>
+                     <p>OF</p>
+                     <p>EXPERIENCE</p>
+                     <p>IN THE INDUSTRY</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_planTrip">
+      <div id="planTrip">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:26;">
+                  <img src="images/logo2222222222.png" id="Image2" alt="" width="1250" height="235">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_galleryLayoutGrid">
+      <div id="galleryLayoutGrid">
+         <div class="row">
+            <div class="col-1">
+               <div class="col-1-padding">
+                  <div id="wb_galleryCollage" style="display:inline-block;width:100%;z-index:27;">
+                     <div id="galleryCollage">
+                        <div class="thumbnails">
+                           <figure class="thumbnail">
+                              <a href="pokraska-sten-v-interere-49.webp" data-rel=""><img alt="" src="pokraska-sten-v-interere-49.webp" loading="lazy" class="image" width="376" height="282"></a>
+                           </figure>
+                           <figure class="thumbnail">
+                              <a href="pokraska-sten-v-interere-43.webp" data-rel=""><img alt="" src="pokraska-sten-v-interere-43.webp" loading="lazy" class="image" width="376" height="293"></a>
+                           </figure>
+                           <figure class="thumbnail">
+                              <a href="images/pokraska-sten-v-interere_599f09c1e62b3.jpg" data-rel=""><img alt="" src="images/pokraska-sten-v-interere_599f09c1e62b3.jpg" loading="lazy" class="image" width="376" height="261"></a>
+                           </figure>
+                           <figure class="thumbnail">
+                              <a href="images/1634664447_82-p-patio-u-doma-foto-87.jpg" data-rel=""><img alt="" src="images/1634664447_82-p-patio-u-doma-foto-87.jpg" loading="lazy" class="image" width="376" height="251"></a>
+                           </figure>
+                           <figure class="thumbnail">
+                              <a href="images/dizajn-spalni-v-oranzhevykh-tonakh48.jpg" data-rel=""><img alt="" src="images/dizajn-spalni-v-oranzhevykh-tonakh48.jpg" loading="lazy" class="image" width="376" height="251"></a>
+                           </figure>
+                           <figure class="thumbnail">
+                              <a href="pokraska-sten-v-interere-20.webp" data-rel=""><img alt="" src="pokraska-sten-v-interere-20.webp" loading="lazy" class="image" width="376" height="251"></a>
+                           </figure>
+                           <figure class="thumbnail">
+                              <a href="images/korichnevyj-tsvet-v-interere1.jpg" data-rel=""><img alt="" src="images/korichnevyj-tsvet-v-interere1.jpg" loading="lazy" class="image" width="376" height="251"></a>
+                           </figure>
+                           <figure class="thumbnail">
+                              <a href="images/serye-steny-v-interere_5995ffeb32635.jpg" data-rel=""><img alt="" src="images/serye-steny-v-interere_5995ffeb32635.jpg" loading="lazy" class="image" width="376" height="251"></a>
+                           </figure>
+                           <figure class="thumbnail">
+                              <a href="pokraska-sten-v-interere-2 (1).webp" data-rel=""><img alt="" src="pokraska-sten-v-interere-2 (1).webp" loading="lazy" class="image" width="376" height="282"></a>
+                           </figure>
+                           <figure class="thumbnail">
+                              <a href="pokraska-sten-v-interere-7.webp" data-rel=""><img alt="" src="pokraska-sten-v-interere-7.webp" loading="lazy" class="image" width="376" height="249"></a>
+                           </figure>
+                           <figure class="thumbnail">
+                              <a href="images/vannaya-na-mansarde_598c19e765b13.jpg" data-rel=""><img alt="" src="images/vannaya-na-mansarde_598c19e765b13.jpg" loading="lazy" class="image" width="376" height="251"></a>
+                           </figure>
+                           <figure class="thumbnail">
+                              <a href="images/pokraska-sten-v-interere_5b94d4290b1c6.jpg" data-rel=""><img alt="" src="images/pokraska-sten-v-interere_5b94d4290b1c6.jpg" loading="lazy" class="image" width="376" height="314"></a>
+                           </figure>
+                           <figure class="thumbnail">
+                              <a href="images/dizajn-malenkoj-detskoj-komnaty66.jpg" data-rel=""><img alt="" src="images/dizajn-malenkoj-detskoj-komnaty66.jpg" loading="lazy" class="image" width="376" height="251"></a>
+                           </figure>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_todoCards">
+      <div id="todoCards">
+         <div class="row">
+            <div class="col-1">
+               <div class="col-1-padding">
+                  <div id="wb_todoCard1" style="display:flex;width:100%;z-index:28;" class="card" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
+                     <div id="todoCard1-card-body">
+                        <div id="todoCard1-card-item0"><i class="fa fa-address-book-o"></i></div>
+                        <div id="todoCard1-card-item1">The Golden Age</div>
+                        <div id="todoCard1-card-item2">2019 is all about Delft and The Golden Age</div>
+                        <div id="todoCard1-card-item3">Learn more ></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-2">
+               <div class="col-2-padding">
+                  <div id="wb_todoCard2" style="display:flex;width:100%;z-index:29;" class="card" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
+                     <div id="todoCard2-card-body">
+                        <div id="todoCard2-card-item0"><i class="fa fa-heart"></i></div>
+                        <div id="todoCard2-card-item1">Delft Blue</div>
+                        <div id="todoCard2-card-item2">Everything about the world-famous porcelain</div>
+                        <div id="todoCard2-card-item3">Learn more ></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-3">
+               <div class="col-3-padding">
+                  <div id="wb_todoCard3" style="display:flex;width:100%;z-index:30;" class="card" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
+                     <div id="todoCard3-card-body">
+                        <div id="todoCard3-card-item0"><i class="fa fa-paint-brush"></i></div>
+                        <div id="todoCard3-card-item1">Vermeer</div>
+                        <div id="todoCard3-card-item2">Birthplace of this world-famous artist</div>
+                        <div id="todoCard3-card-item3">Learn more ></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-4">
+               <div class="col-4-padding">
+                  <div id="wb_todoCard4" style="display:flex;width:100%;z-index:31;" class="card" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
+                     <div id="todoCard4-card-body">
+                        <div id="todoCard4-card-item0"><i class="fa fa-flag"></i></div>
+                        <div id="todoCard4-card-item1">Orange</div>
+                        <div id="todoCard4-card-item2">City of the Royal Family</div>
+                        <div id="todoCard4-card-item3">Learn more ></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_planTripLayoutGrid">
+      <div id="planTripLayoutGrid">
+         <div id="wb_planTripCard1" style="display:flex;z-index:32;" class="card">
+            <div id="planTripCard1-card-body">
+               <div id="planTripCard1-card-item0"><i class="fa fa-map-marker"></i></div>
+               <div id="planTripCard1-card-item1">Cheap combitickets</div>
+               <div id="planTripCard1-card-item2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis.</div>
+            </div>
+         </div>
+         <div id="wb_planTripCard2" style="display:flex;z-index:33;" class="card">
+            <div id="planTripCard2-card-body">
+               <div id="planTripCard2-card-item0"><i class="fa fa-calendar"></i></div>
+               <div id="planTripCard2-card-item1">Getting There </div>
+               <div id="planTripCard2-card-item2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis.</div>
+            </div>
+         </div>
+         <div id="wb_planTripCard3" style="display:flex;z-index:34;" class="card">
+            <div id="planTripCard3-card-body">
+               <div id="planTripCard3-card-item0"><i class="fa fa-smile-o"></i></div>
+               <div id="planTripCard3-card-item1">Enjoy the Trip</div>
+               <div id="planTripCard3-card-item2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis.</div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_attractions">
+      <div id="attractions">
+         <div class="row">
+            <div class="col-1">
+               <div class="col-1-padding">
+                  <div id="wb_attractionsCarousel">
+                     <div id="attractionsCarousel" class="carousel slide">
+                        <ol class="carousel-indicators">
+                           <li data-bs-target="#attractionsCarousel" data-bs-slide-to="0" class="active"></li>
+                           <li data-bs-target="#attractionsCarousel" data-bs-slide-to="1"></li>
+                           <li data-bs-target="#attractionsCarousel" data-bs-slide-to="2"></li>
+                           <li data-bs-target="#attractionsCarousel" data-bs-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                           <div class="carousel-item frame-1 active">
+                              <div class="carousel-item-inner">
+                                 <div id="wb_attractionsText2" class="caption">
+                                    <p><span style="font-size:21px;line-height:24.5px;font-weight:bold;">Johannes Vermeer</span><br/><span style="font-size:15px;line-height:16.5px;">Girl with pearl earring</span></p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="carousel-item frame-2">
+                              <div class="carousel-item-inner">
+                                 <div id="wb_attractionsText3" class="caption">
+                                    <p style="font-size:16px;line-height:18px;font-weight:bold;"><span style="font-size:21px;line-height:24.5px;">Adriaen Thomasz Key</span></p>
+                                    <p style="font-size:16px;line-height:18px;"><span style="font-size:15px;line-height:16.5px;">Willem van Oranje</span></p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="carousel-item frame-3">
+                              <div class="carousel-item-inner">
+                              </div>
+                           </div>
+                           <div class="carousel-item frame-4">
+                              <div class="carousel-item-inner">
+                              </div>
+                           </div>
+                        </div>
+                        <a class="carousel-item-start carousel-control" href="#attractionsCarousel" role="button" data-bs-slide="prev">
+                           <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-item-end carousel-control" href="#attractionsCarousel" role="button" data-bs-slide="next">
+                           <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-2">
+               <div class="col-2-padding">
+                  <div id="wb_attractionsText1">
+                     <p>Delft is a popular tourist attraction in the Netherlands. It is home to Delft University of Technology (TU Delft), regarded as center of technological research and development in the Netherlands, Delft Blue pottery and the currently reigning House of Orange-Nassau. Historically, Delft played a highly influential role in the Dutch Golden Age. It's also the birth place of Johannes Vermeer, a famous Dutch painter.</p>
+                  </div>
+                  <a id="attractionsButton" href="https://www.delft.com/explore-delft/" style="display:inline-block;width:141px;height:37px;z-index:39;">More details</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_gallery">
+      <div id="gallery">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_galleryHeading" style="display:inline-block;width:100%;z-index:40;">
+                  <h2 id="galleryHeading">Gallery</h2>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_reviews">
+      <div id="reviews">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_reviewsHeading" style="display:inline-block;width:100%;z-index:41;">
+                  <h2 id="reviewsHeading">What do visitors say?</h2>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_reviewsContainer">
+      <div id="reviewsContainer" class="owl-carousel owl-theme">
+         <div id="wb_reviewsCard4" style="display:flex;z-index:42;" class="card">
+            <div id="reviewsCard4-card-body">
+               <img id="reviewsCard4-card-item0" src="images/86x86.jpg" alt="" title="">
+               <div id="reviewsCard4-card-item1">Willem de Zwijger</div>
+               <div id="reviewsCard4-card-item2">Prince of Orange</div>
+               <div id="reviewsCard4-card-item3"><i class="fa fa-star"></i></div>
+               <div id="reviewsCard4-card-item4"><i class="fa fa-star"></i></div>
+               <div id="reviewsCard4-card-item5"><i class="fa fa-star"></i></div>
+               <div id="reviewsCard4-card-item6"><i class="fa fa-star"></i></div>
+               <div id="reviewsCard4-card-item7"><i class="fa fa-star"></i></div>
+               <div id="reviewsCard4-card-item8">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis."</div>
+            </div>
+         </div>
+         <div id="wb_reviewsCard2" style="display:flex;z-index:43;" class="card">
+            <div id="reviewsCard2-card-body">
+               <img id="reviewsCard2-card-item0" src="images/86x86.jpg" alt="" title="">
+               <div id="reviewsCard2-card-item1">Willem de Zwijger</div>
+               <div id="reviewsCard2-card-item2">Prince of Orange</div>
+               <div id="reviewsCard2-card-item3"><i class="fa fa-star"></i></div>
+               <div id="reviewsCard2-card-item4"><i class="fa fa-star"></i></div>
+               <div id="reviewsCard2-card-item5"><i class="fa fa-star"></i></div>
+               <div id="reviewsCard2-card-item6"><i class="fa fa-star"></i></div>
+               <div id="reviewsCard2-card-item7"><i class="fa fa-star"></i></div>
+               <div id="reviewsCard2-card-item8">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis."</div>
+            </div>
+         </div>
+         <div id="wb_reviewsCard1" style="display:flex;z-index:44;" class="card">
+            <div id="reviewsCard1-card-body">
+               <img id="reviewsCard1-card-item0" src="images/86x86.jpg" alt="" title="">
+               <div id="reviewsCard1-card-item1">Johannes Vermeer</div>
+               <div id="reviewsCard1-card-item2">Painter</div>
+               <div id="reviewsCard1-card-item3"><i class="fa fa-star"></i></div>
+               <div id="reviewsCard1-card-item4"><i class="fa fa-star"></i></div>
+               <div id="reviewsCard1-card-item5"><i class="fa fa-star"></i></div>
+               <div id="reviewsCard1-card-item6"><i class="fa fa-star"></i></div>
+               <div id="reviewsCard1-card-item7"><i class="fa fa-star"></i></div>
+               <div id="reviewsCard1-card-item8">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis."</div>
+            </div>
+         </div>
+         <div id="wb_Card1" style="display:flex;z-index:45;" class="card">
+            <div id="Card1-card-body">
+               <img id="Card1-card-item0" src="images/86x86.jpg" alt="" title="">
+               <div id="Card1-card-item1">Johannes Vermeer</div>
+               <div id="Card1-card-item2">Painter</div>
+               <div id="Card1-card-item3"><i class="fa fa-star"></i></div>
+               <div id="Card1-card-item4"><i class="fa fa-star"></i></div>
+               <div id="Card1-card-item5"><i class="fa fa-star"></i></div>
+               <div id="Card1-card-item6"><i class="fa fa-star"></i></div>
+               <div id="Card1-card-item7"><i class="fa fa-star"></i></div>
+               <div id="Card1-card-item8">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis."</div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_contact">
+      <div id="contact">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_contactHeading" style="display:inline-block;width:100%;z-index:46;">
+                  <h2 id="contactHeading">Looking for more inspiration?</h2>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_contactForm">
+      <div id="contactForm-divider-top">
+      </div>
+      <div id="contactForm">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_contactText1">
+                  <p style="font-size:13px;line-height:16px;"><span style="font-size:27px;line-height:30px;font-weight:bold;">Receive the best tips</span></p>
+               </div>
+               <div id="wb_contactText2">
+                  <p>We only use your e-mail address to send you the best tips about Delft.&nbsp;You can always unsubscribe using the link in the e-mail. </p>
+               </div>
+               <input type="text" id="contactEmail" style="display:block;width:100%;height:35px;z-index:49;" name="email" value="" spellcheck="false" placeholder="Your e-mail">
+               <input type="submit" id="contactButton" name="" value="Subscribe" style="display:inline-block;width:87px;height:30px;z-index:50;">
+            </div>
+            <div class="col-2">
+               <div id="wb_contactText3">
+                  <p style="font-size:27px;line-height:30px;"><span style="font-weight:bold;">Contact Us</span></p>
+                  <p style="font-size:13px;line-height:16px;">&nbsp;</p>
+                  <p style="font-size:13px;line-height:16px;">Tourist information VVV Delft </p>
+                  <p style="font-size:13px;line-height:16px;">&nbsp;</p>
+                  <p style="font-size:13px;line-height:16px;">Kerkstraat 3 (Marktplein) </p>
+                  <p style="font-size:13px;line-height:16px;">2611 GX Delft</p>
+                  <p style="font-size:13px;line-height:16px;">&nbsp;</p>
+                  <p style="font-size:13px;line-height:16px;">+31 (0) 6 21 33 06 33 </p>
+                  <p style="font-size:13px;line-height:16px;">&nbsp;</p>
+                  <p style="font-size:13px;line-height:16px;">hello@delft.com</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <a href="https://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb18.png" alt="WYSIWYG Web Builder" style="position:absolute;left:1px;top:5553px;margin:0;border-width:0;z-index:250" width="16" height="16"></a>
+   <div id="socialmedia_sticky" style="position:fixed;text-align:left;left:auto;right:-130px;top:125px;width:156px;height:407px;z-index:92;" title="Social Media Sticky">
+      <a href="#"><img src="images/img0002.png" id="socialmedia_twitter" alt="" title="" style="border-width:0;position:absolute;left:6px;top:154px;width:150px;height:45px;z-index:72" width="150" height="45"></a>
+      <a href="#"><img src="images/img0008.png" id="socialmedia_email" alt="" title="" style="border-width:0;position:absolute;left:6px;top:199px;width:150px;height:45px;z-index:73" width="150" height="45"></a>
+      <a href="#"><img src="images/img0004.png" id="socialmedia_linkedin" alt="" title="" style="border-width:0;position:absolute;left:6px;top:244px;width:150px;height:45px;z-index:74" width="150" height="45"></a>
+      <a href="#"><img src="images/img0007.png" id="socialmedia_youtube" alt="" title="" style="border-width:0;position:absolute;left:6px;top:289px;width:150px;height:45px;z-index:75" width="150" height="45"></a>
+      <a href="#"><img src="images/img0001.png" id="socialmedia_facebook" alt="" title="" style="border-width:0;position:absolute;left:6px;top:109px;width:150px;height:44px;z-index:76" width="150" height="44"></a>
+   </div>
+   <div id="Html1" style="position:absolute;left:25px;top:5396px;width:41px;height:44px;visibility:hidden;z-index:93">
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
+@mixin position-center($text-align: center) {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: $text-align;
+}
+.loading {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	z-index: 9999;
+}
+.loading-text {
+	@include position-center;
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+	span {
+		display: inline-block;
+		margin: 0 5px;
+		color: #fff;
+    font-family: 'Quattrocento Sans', sans-serif;
+		@for $i from 0 through 6 {
+			&:nth-child(#{$i + 1}) {
+				filter: blur(0px);
+				animation: blur-text 1.5s (#{$i/5})+s infinite linear alternate;
+			}
+		}
+	}
+}
+@keyframes blur-text {
+	0% {filter: blur(0px);}
+	100% {filter: blur(4px);}
+}
+   </div>
+</body>
+</html>
